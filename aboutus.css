@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  background-color: lightblue;
+}
+
+#aboutus {
+  border: 5px solid black;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#whystart {
+  border: 5px solid black;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+#whoarewe {
+  border: 5px solid black;
+  margin-left: 30%;
+  margin-left: 30%;
+}
+
+#start {
+  color: blue
+}
+#picture{
+	text-align: center;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home - South Bend Pothole Association</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="home.css">
+		<script src="home.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrWkFvTd4utSgXwPaSOEgCSOSot12_XpE&callback=initMap"
+type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="top">
+			<div id="title">
+				<h1>South Bend Pothole Association</h1>
+			</div>
+		</div>
+		<nav>
+			<div class="nav-wrapper blue lighten-1">
+				<img href="#" class="brand-logo center" src="logo.png">
+					<ul id="nav-mobile" class="left hide-on-med-and-down">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="row">
+			<div id="map" class="description col s6 offset-s3">
+			</div>
+		</div>
+		<div class="row">
+ <a class="col s4 offset-s4 waves-effect waves-light btn modal-trigger" href="#modal1">Submit Pothole</a>
+</div>
+		<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Enter a Description</h4>
+			<form action="#">
+	 <div class="file-field input-field">
+		 <div class="btn">
+			 <span>Picture</span>
+			 	<input type="file" id="uploadfile">
+			 </div>
+
+				<div class="file-path-wrapper">
+					<input class="file-path validate" type="text">
+				</div>
+			 </div>
+			 <div class="input-field">
+			 <textarea id="description" class="materialize-textarea"></textarea>
+          <label for="description">Description</label>
+				</div>
+		 </div>
+ </form>
+    <div class="modal-footer">
+      <a href="#!" id="submitbutton" class="modal-close waves-effect waves-green btn-flat">Submit</a>
+    </div>
+  </div>
+
+
+
+</html>
